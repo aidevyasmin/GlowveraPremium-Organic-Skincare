@@ -10,6 +10,15 @@ export interface Product {
   reviews: { id: number; author: string; rating: number; comment: string; }[];
 }
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  preview: string;
+  content: string;
+  imageUrl: string;
+  galleryImages?: string[]; // Optional array of image URLs for galleries
+}
+
 export const products: Product[] = [
   {
     id: '6',
@@ -43,7 +52,7 @@ export const products: Product[] = [
   { id: '5', name: 'Daily Sunscreen', description: 'SPF 30.', price: 3500, imageUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800', ingredients: [], reviews: [] }
 ];
 
-export const blogPosts = [
+export const blogPosts: BlogPost[] = [
   { id: '1', title: 'Hydrating Serums', preview: 'Serum guide.', content: 'Hydrating serums are a cornerstone of any effective skincare routine, especially for those seeking to combat dryness and maintain a plump, youthful complexion. These potent formulations typically feature ingredients like hyaluronic acid, glycerin, and ceramides, which work synergistically to attract and lock moisture into the skin. Regular use can lead to improved skin texture, reduced appearance of fine lines, and a healthy, dewy glow. Apply after cleansing and toning, before heavier moisturizers, to maximize absorption and benefits.', imageUrl: 'https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=800' },
   { id: '2', title: 'Radiant Skin Routine', preview: 'Step-by-step.', content: 'Achieving radiant skin is a journey that requires consistency and the right routine. Start with a gentle cleanser to remove impurities without stripping natural oils. Follow with a toner to balance pH levels. The key step for radiance is often a Vitamin C serum, known for its brightening and antioxidant properties. Hydrate generously with a moisturizer suitable for your skin type, and always finish with a broad-spectrum SPF during the day. Exfoliate 2-3 times a week to shed dead skin cells and reveal fresh, glowing skin underneath.', imageUrl: '/products/radiant-serum.jpg' },
   { id: '3', title: 'Natural Ingredients', preview: 'Botanical power.', content: 'The power of nature lies in its incredible ability to heal, nourish, and protect. In skincare, natural ingredients offer a wealth of benefits, from soothing inflammation to providing potent antioxidant defense. Botanicals like aloe vera, green tea, chamomile, and essential oils are packed with vitamins, minerals, and compounds that work harmoniously with the skin. Embracing natural ingredients means choosing formulations free from harsh chemicals and synthetic additives, allowing your skin to thrive in its most authentic state.', imageUrl: '/blog-placeholder.jpg' },
