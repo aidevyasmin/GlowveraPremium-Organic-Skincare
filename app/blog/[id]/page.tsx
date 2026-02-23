@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { blogPosts } from '@/app/lib/data';
+import { blogPosts, BlogPost } from '@/app/lib/data';
 
 interface BlogPageProps {
   params: Promise<{
@@ -127,7 +127,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
 // This function can be used to generate static paths if you are using SSG.
 // For this example, we're relying on dynamic rendering.
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  return blogPosts.map((post: BlogPost) => ({
     id: post.id,
   }));
 }
