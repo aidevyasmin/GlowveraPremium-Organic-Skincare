@@ -1,0 +1,8 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#fff" />
+  <circle cx="200" cy="180" r="80" fill="#fce4d4" />
+  <path d="M160 290 Q200 330 240 290" stroke="#d49a70" stroke-width="5" fill="none" />
+  <circle cx="170" cy="150" r="10" fill="#d49a70" />
+  <circle cx="230" cy="150" r="10" fill="#d49a70" />
+  <text x="50%" y="360" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">After: Bright Skin</text>
+</svg>
